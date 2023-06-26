@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: aliceblue;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #c9c9c9;
+  border-radius: 9px;
+  width: 500px;
+}
+
+.todo-input{
+  display: flex;
+  flex-direction: column;
+}
+.todo-input span{
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+.todo-input input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+font-size: 19px;
+width: 380px;
+}
+.todo-input input:focus{
+  outline: none;
+ 
+}
+.todo-input .content button{
+  padding: 10px;
+  margin: 0px 7px;
+  border: none;
+  background-color: rgb(43, 43, 108);
+  color: white;
+  height: 40px;
+  cursor: pointer;
+  
+}
+
+.todo-list-container{
+  
+  margin: 10px 0px;
+}
+.todo-list-container .todo{
+background-color: rgb(199, 218, 235);
+padding: 7px;
+border-radius: 7px;
+display: flex;
+/* flex-direction: column; */
+justify-content: space-between;
+margin-bottom: 7px;
+
+
+}
+.todo-list-container .todo label.line{
+  text-decoration: line-through;
+}
+.todo-list-container .todo label{
+  font-family: sans-serif;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.check{
+  margin-right: 10px;
+}
+.delete{
+  margin: 0px 9px;
+  background: rgb(156, 52, 52);
+padding: 5px;
+border: none;
+border-radius: 4px;
+color: white;
+font-family: sans-serif;
+cursor: pointer;
+}
+
+
+
+
